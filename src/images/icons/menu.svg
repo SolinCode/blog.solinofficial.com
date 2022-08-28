@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+    <symbol id="cross" viewBox="0 0 35 35">
+        <path d="M5.13 29.87 29.87 5.13M5.13 5.13l24.74 24.74" stroke-width="5"/>
+    </symbol>
+    <symbol id="menu" viewBox="0 0 35 35">
+        <path class="st0" d="M0 6h35M0 17.5h35M0 29h35" stroke-width="5"/>
+    </symbol>
+</svg>

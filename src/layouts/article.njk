@@ -1,0 +1,21 @@
+---
+layout: page.njk
+---
+
+<main class="main">
+    <section class="main__section">
+        <div class="article__heading">
+            <date class="article__heading--date" datetime="{{date}}">{{ date.toUTCString() }}</date>
+            <h1 class="article__heading--title">{{title}}</h1>
+            <p class="article__heading--preview">{{preview}}</p>
+            <p class="article__heading--tag">{{tags}}</p>
+            <a class="article__heading--edit" href="https://github.com/SolinCode/blog.solinofficial.com/tree/main/src{{ page.url }}">Редактировать статью</a>
+        </div>
+        <div class="article__content">
+            {{ content | safe }}
+        </div>
+        <p class="notice">
+            <a class="notice__link" href="/">На главную</a>
+        </p>
+    </section>
+</main>

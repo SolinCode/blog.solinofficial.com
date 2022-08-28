@@ -1,0 +1,35 @@
+.article__item--last {
+    border-top: 1px var(--separator-color) solid;
+    border-bottom: 1px var(--separator-color) solid;
+    padding-bottom: 18px;
+    height: 100%;
+    list-style-type: none;
+    position: relative;
+}
+
+.article__title--last {
+    line-height: 1.2em;
+    font-size: 24px;
+    margin-top: 18px;
+    margin-bottom: 0;
+    font-weight: 500;
+}
+
+.article__preview--last {
+    line-height: 1.4em;
+    font-size: 16px;
+    letter-spacing: -0.5px;
+    margin: 16px 0;
+}
+
+.article__date--last {
+    color: var(--second-color);
+}
+
+.article__link--last {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}

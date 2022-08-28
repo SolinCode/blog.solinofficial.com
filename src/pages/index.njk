@@ -1,0 +1,26 @@
+---
+title: Solin's Official Blog
+layout: page.njk
+permalink: index.html
+---
+
+<main class="main">
+    <section class="main__section">
+        <h1 class="main__title">Статьи</h1>
+        <ul class="articles">
+            {%- for article in collections.Article | reverse -%}
+                <div class="article__item--list--last">
+                    <li class="article__item article__item__list--rows">
+                        <h2 class="article__title">{{ article.data.title }}</h2>
+                        <p class="">{{ article.data.preview }}</p>
+                        <time class="article__date">{{article.date.toUTCString()}}</time>
+                        <a class="article__link" href="{{ article.url }}"></a>
+                    </li>
+                </div>
+            {%- endfor -%}
+        </ul>
+        {# <p class="notice">
+            <a class="notice__link" href="/articles">Все статьи</a>
+        </p> #}
+    </section>
+</main>

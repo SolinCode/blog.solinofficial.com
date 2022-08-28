@@ -1,0 +1,36 @@
+.page {
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: -0.5px;
+}
+
+.page__body {
+    margin: 0;
+    background-color: var(--bg-color);
+    color: var(--main-color);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.main__title {
+    font-size: 40px;
+    font-weight: 300;
+    letter-spacing: 8.5px;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: calc(0.67em + 15px);
+    color: var(--main-color);
+}
+
+.main__section {
+    padding: 0 25px;
+    margin: 0 auto;
+    max-width: 100%;
+    width: 900px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.7;
+    letter-spacing: -0.02em;
+}

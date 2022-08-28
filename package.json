@@ -1,0 +1,22 @@
+{
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "stylelint": "stylelint src/styles/**/*.css",
+    "start": "npx eleventy --serve --quiet",
+    "build": "rmdir /s dist && npx eleventy && gulp html && gulp styles",
+    "deploy": "cd dist && rsync --archive --compress --delete . solin@solin.vps:/var/www/blog.solinofficial.com"
+  },
+  "bugs": {
+    "url": "https://github.com/SolinCode/blog.solinofficial.com/issues"
+  },
+  "homepage": "https://blog.solinofficial.com",
+  "dependencies": {
+    "@11ty/eleventy": "^1.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-htmlmin": "^5.0.1"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}
