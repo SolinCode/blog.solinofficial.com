@@ -2,8 +2,8 @@
     "private": true,
     "scripts": {
         "start": "npx eleventy --serve --quiet",
-        "build": "echo y|rmdir /s dist && npx eleventy && gulp",
-        "deploy": "cd dist && rsync --archive --compress --delete . solin@solin.vps:/var/www/blog.solinofficial.com"
+        "build": "rm -rf dist && npx eleventy && gulp",
+        "deploy": "npm run build && cd dist && rsync --archive --compress --delete . solin@solin.vps:/var/www/blog.solinofficial.com"
     },
     "bugs": {
         "url": "https://github.com/SolinCode/blog.solinofficial.com/issues"
