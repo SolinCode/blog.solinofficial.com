@@ -4,6 +4,7 @@
     max-width: 100%;
     width: 1200px;
     font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .links__list {
@@ -29,6 +30,16 @@
     margin: 0;
     display: flex;
     gap: 25px;
+}
+
+.links__description--hidden {
+
+}
+
+@media (max-width: 355px) {
+    .links__description--hidden {
+        display: none;
+    }
 }
 
 .links__link {

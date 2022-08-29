@@ -5,20 +5,27 @@ permalink: index.html
 ---
 
 <main class="main">
-    <section class="main__section">
-        <h1 class="main__title">Статьи</h1>
-        <ul class="articles">
+	<section class="main__section">
+		<h1 class="main__title">Статьи</h1>
+		<ul class="articles">
+            {%- for featured in collections.featured | reverse -%}
+                <li class="article__item article__item--featured">
+                    <img class="article__image article__image--featured" src="{{ featured.url + "images/1.jpg" }}" alt="{{ featured.title }}">
+                    <h2 class="article__title article__title--featured">{{ featured.data.title }}</h2>
+                    <p class="article__preview article__preview--featured">{{ featured.data.preview }}</p>
+                    <time class="article__date article__date--featured" datetime="{{ featured.date.toISOString() }}">{{ featured.date.toLocaleString('ru-RU', { year: 'numeric', month: '2-digit', day: '2-digit' }) }}</time>
+                    <a class="article__link" href="{{ featured.url }}"></a>
+                </li>
+            {%- endfor -%}
+            <h1 class="main__subtitle">Последние статьи</h1>
             {%- for article in collections.articles | reverse -%}
-                <li class="article__item article__item--all">
+                <li class="article__item">
                     <h2 class="article__title">{{ article.data.title }}</h2>
                     <p class="article__preview">{{ article.data.preview }}</p>
-                    <time class="article__date">{{article.date.toUTCString()}}</time>
+                    <time class="article__date" datetime="{{ article.date.toISOString() }}">{{ article.date.toLocaleString('ru-RU', { year: 'numeric', month: '2-digit', day: '2-digit' }) }}</time>
                     <a class="article__link" href="{{ article.url }}"></a>
                 </li>
             {%- endfor -%}
         </ul>
-        {# <p class="notice">
-            <a class="notice__link" href="/articles">Все статьи</a>
-        </p> #}
-    </section>
+	</section>
 </main>
