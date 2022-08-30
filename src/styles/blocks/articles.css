@@ -160,7 +160,7 @@
 
 @media (min-width: 700px) {
     .notice__link {
-        font-size: 23px;
+        font-size: 25px;
     }
 }
 
@@ -285,13 +285,15 @@
 }
 
 .article__content--minipic {
-    width: calc(100% - 60px);
-    margin: 0 30px;
+    width: 100%;
+    padding: 0 15px;
 }
 
 @media (min-width: 700px) {
     .article__content--minipic {
         width: max-content;
+        max-width: 100%;
+        padding: 0 30px;
     }
 }
 
