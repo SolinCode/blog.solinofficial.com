@@ -8,9 +8,13 @@ layout: page.njk
             <time class="article__heading--date" datetime=" {{ date.toISOString()}} ">{{ date.toLocaleString('ru-RU', { year: 'numeric', month: '2-digit', day: '2-digit'}) }}</time>
             <h1 class="article__heading--title">{{ title }}</h1>
             <p class="article__heading--tag">{{ tags }}</p>
+            <img class="article__heading--image" src="images/preview.jpg" alt="{{ title }}">
             <a class="article__heading--edit" href="https://github.com/SolinCode/blog.solinofficial.com/blob/main/src{{ page.url }}index.md">Редактировать статью</a>
         </div>
         <div class="article__content">
+            <br>
+            <p>{{ preview }}</p>
+
             {{ content | safe }}
         </div>
         <p class="notice">

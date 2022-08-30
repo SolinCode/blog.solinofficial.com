@@ -2,7 +2,6 @@
 title: "Katana's Pack"
 date: 2020-07-20
 tags:
-    - featured
     - minecraft
 preview: 'Ресурспак для Minecraft кторый добавляет 5 моделей катан.'
 ---

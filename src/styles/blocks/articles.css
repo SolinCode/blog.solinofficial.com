@@ -59,6 +59,7 @@
         display: none;
         width: 100%;
         border-radius: 20px;
+
     }
 }
 
@@ -169,15 +170,27 @@
 .article__heading {
     border-bottom: 1px var(--separator-color) solid;
     padding-bottom: 25px;
+    display: block;
+    grid-template-columns: 50% 50%;
+}
+
+@media (min-width: 700px) {
+    .article__heading {
+        display: grid;
+    }
 }
 
 .article__heading--date {
     margin: 0;
+    grid-column: 1;
 }
 
 @media (min-width: 700px) {
     .article__heading--date {
         font-size: 19px;
+        line-height: 1;
+        margin-top: 30px;
+        margin-right: 15px;
     }
 }
 
@@ -186,6 +199,7 @@
     font-weight: 500;
     line-height: 1.2;
     margin: 15px 0;
+    grid-column: 1;
 }
 
 @media (min-width: 700px) {
@@ -194,27 +208,45 @@
         font-weight: 500;
         line-height: 1;
         letter-spacing: 0.02em;
+        margin-right: 15px;
     }
+}
+
+.article__heading--image {
+    width: 100%;
+    border-radius: 25px;
+    margin: 0 auto;
+    grid-column: 2;
+    grid-row: 1 / 5;
 }
 
 .article__heading--tag {
     color: var(--second-color);
+    grid-column: 1;
 }
 
 @media (min-width: 700px) {
     .article__heading--tag {
         font-size: 19px;
+        margin-right: 15px;
     }
 }
 
 .article__heading--edit {
     color: var(--main-color);
     padding: 10px 0;
+    grid-column: 1;
 }
 
 @media (min-width: 700px) {
     .article__heading--edit {
         font-size: 19px;
+        margin: 0;
+        padding: 0;
+        align-self: end;
+        line-height: 1;
+        margin-right: 15px;
+        margin-bottom: 30px;
     }
 }
 
@@ -247,19 +279,30 @@
     padding-bottom: 5px;
 }
 
-.article__content img {
+.article__content p img {
     width: 100%;
     border-radius: 30px;
 }
 
+.article__content--minipic {
+    width: calc(100% - 60px);
+    margin: 0 30px;
+}
+
+@media (min-width: 700px) {
+    .article__content--minipic {
+        width: max-content;
+    }
+}
+
 @media (min-width: 500px) {
-    .article__content img {
+    .article__content p img {
         border-radius: 45px;
     }
 }
 
 @media (min-width: 700px) {
-    .article__content img {
+    .article__content p img {
         border-radius: 50px;
     }
 }
@@ -290,7 +333,6 @@
 .article__content ul {
     position: relative;
     padding-left: 0;
-    counter-reset: list;
 }
 
 .article__content li {
@@ -302,6 +344,7 @@
 
 .article__content ol {
     padding-left: 0;
+    counter-reset: list;
 }
 
 .article__content ul > li::before {
