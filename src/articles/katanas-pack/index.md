@@ -3,7 +3,7 @@ title: "Katana's Pack"
 date: 2020-07-20
 tags:
     - minecraft
-preview: 'Ресурспак для Minecraft кторый добавляет 5 моделей катан.'
+preview: 'Ресурспак для Minecraft, который добавляет 5 моделей катан.'
 ---
 
 ## Ресурспак добавляет 5 моделей катан, для корректной работы необходим<br> [OptiFine](https://optifine.net/downloads) или [CIT Resewn](https://www.curseforge.com/minecraft/mc-mods/cit-resewn/files).
