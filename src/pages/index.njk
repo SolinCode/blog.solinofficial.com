@@ -13,7 +13,7 @@ permalink: index.html
                     <img class="article__image article__image--featured" src="{{ featured.url + "images/preview.jpg" }}" alt="{{ featured.title }}">
                     <h2 class="article__title article__title--featured">{{ featured.data.title }}</h2>
                     <p class="article__preview article__preview--featured">{{ featured.data.preview }}</p>
-                    <time class="article__date article__date--featured" datetime="{{ featured.date.toISOString() }}">{{ featured.date.toLocaleString('ru-RU', { year: 'numeric', month: '2-digit', day: '2-digit' }) }}</time>
+                    <time class="article__date article__date--featured" datetime="{{ featured.date.toISOString() }}">{{ featured.date | ruDate }}</time>
                     <a class="article__link" href="{{ featured.url }}"></a>
                 </li>
             {%- endfor -%}
