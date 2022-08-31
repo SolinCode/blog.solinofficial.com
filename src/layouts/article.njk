@@ -5,7 +5,7 @@ layout: page.njk
 <main class="main">
     <section class="main__section">
         <div class="article__heading">
-            <time class="article__heading--date" datetime=" {{ date.toISOString()}} ">{{ date.toLocaleString('ru-RU', { year: 'numeric', month: '2-digit', day: '2-digit'}) }}</time>
+            <time class="article__heading--date" datetime="{{ date.toISOString()}}">{{ date.toLocaleString('ru-RU', { year: 'numeric', month: '2-digit', day: '2-digit'}) }}</time>
             <h1 class="article__heading--title">{{ title }}</h1>
             <p class="article__heading--tag">{{ tags }}</p>
             <img class="article__heading--image" src="images/preview.jpg" alt="{{ title }}">

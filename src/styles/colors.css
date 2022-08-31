@@ -1,4 +1,4 @@
-.light {
+:root {
     --main-color: #000000;
     --second-color: #999999;
     --separator-color: #d9d9d9;
@@ -6,13 +6,4 @@
 
     --shadow-color: #00000010;
     --bg-color: #fff;
-}
-
-.dark {
-    --main-color: #e3e3e3;
-    --second-color: #999999;
-    --separator-color: #d9d9d9;
-
-    --shadow-color: #00000010;
-    --bg-color: #000;
 }
