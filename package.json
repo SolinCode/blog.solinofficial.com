@@ -2,7 +2,7 @@
   "private": true,
   "scripts": {
     "start": "npx eleventy --serve --quiet",
-    "build": "rm -rf dist && npx eleventy && gulp",
+    "build": "rm -rf dist && eleventy && gulp",
     "deploy": "npm run build && cd dist && rsync --archive --compress --delete . solin@solin.vps:/var/www/blog.solinofficial.com"
   },
   "bugs": {
