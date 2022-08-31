@@ -18,7 +18,7 @@ permalink: index.html
                 </li>
             {%- endfor -%}
             <h2 class="main__subtitle">Последние статьи</h2>
-            {%- for article in collections.articles | reverse -%}
+            {%- for article in collections.article | reverse -%}
                 <li class="article__item">
                     <h2 class="article__title">{{ article.data.title }}</h2>
                     <p class="article__preview">{{ article.data.preview }}</p>
