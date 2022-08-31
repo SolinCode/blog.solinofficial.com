@@ -1,6 +1,6 @@
 ---
 title: "Красивый Windows 11"
-date: 2022-08-31
+date: 2022-08-30
 tags:
     - featured
     - windows
