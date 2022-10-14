@@ -1,6 +1,6 @@
 ---
 title: "Основы CIT Minecraft: Текстуры, звуки"
-date: 2022-09-10
+date: 2022-10-09
 tags:
     - featured
     - minecraft

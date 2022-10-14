@@ -1,6 +1,6 @@
 ---
 title: "Красивый Windows 11"
-date: 2022-08-30
+date: 2022-08-29
 tags:
     - windows
 preview: 'Если вы несчастливый обладатель 11-той винды, то этот гайд поможет вам стать немного счастливее и приукрасить уже и так красивую систему.'
@@ -33,17 +33,26 @@ preview: 'Если вы несчастливый обладатель 11-той 
 
     К примеру музыки, когда медиа-клавишей переключаете текущий трек или прибавляете звук вы видите:
 
-    <img class="article__content--minipic" src="images/1.jpg" alt="Шкала громкости Windows">
+
+    <figure>
+        <img class="article__content--figure" src="images/1.jpg" alt="Шкала громкости Windows">
+        <figcaption>Шкала громкости Windows</figcaption>
+    </figure>
 
 
     Если использовать 1 из виджетов JaxCore, то он будет выглядеть примерно так:
 
-
-    <img class="article__content--minipic" src="images/2.jpg" alt="Шкала громкости JaxCore">
+    <figure>
+        <img class="article__content--figure" src="images/2.jpg" alt="Шкала громкости в одной из тем JaxCore. Тема Ameber">
+        <figcaption>Шкала громкости в одной из тем JaxCore. Тема Ameber</figcaption>
+    </figure>
 
     Или так:
 
-    <img class="article__content--minipic" src="images/3.jpg" alt="Шкала громкости JaxCore">
+    <figure>
+        <img class="article__content--figure" src="images/3.jpg" alt="Шкала громкости JaxCore. Тема Gnome">
+        <figcaption>Шкала громкости в одной из тем JaxCore. Тема Gnome</figcaption>
+    </figure>
 
     В настройках можно кастомизировать практически все. Шрифт, акцентный цвет виджета, время анимации, задний фон и т.д.
 
@@ -55,7 +64,10 @@ preview: 'Если вы несчастливый обладатель 11-той 
 
     Открыв программу, можно увидеть 2 ползунка первый отвечает за отступ со всех сторон, что позволяет сделать ее не только закругленной, но и придать эффект отступа снизу, вторым ползунком можно задать закругление панели, мои настройки 4, 8 и дает такой эффект:
 
-    <img class="article__content--minipic" src="images/4.jpg" alt="Моя панель задач">
+    <figure>
+        <img class="article__content--figure" src="images/4.jpg" alt="Моя панель задач">
+        <figcaption>Моя панель задач</figcaption>
+    </figure>
 
     Но в интерфейсе RoundedTB есть кнопка "дополнительно", если нажать на нее, то мы увидим еще больше настроек.
 
@@ -81,11 +93,11 @@ preview: 'Если вы несчастливый обладатель 11-той 
 
     [Скачать светлую и темную версию](https://www.deviantart.com/jepricreations/art/Windows-11-Cursors-Concept-v2-886489356).
 
-    ![Windows 11 Cursors Concept v2](images/5.jpg)
+![Windows 11 Cursors Concept v2](images/5.jpg)
 
 2. **Material Design Cursors**
 
     [Скачать темную версию](https://www.deviantart.com/jepricreations/art/Material-Design-Cursors-Dark-756850032)\
     [Скачать светлую версию](https://www.deviantart.com/jepricreations/art/Material-Design-Cursors-Light-775995490)
 
-    ![Material Design Cursors Dark](images/6.jpg)
+![Material Design Cursors Dark](images/6.jpg)
