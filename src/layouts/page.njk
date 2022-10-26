@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta property="title" content="{{title}} — Solin's Blog"/>
+    <meta property="description" content="{% if page.url != '/' %}{{preview}}{% else %}Личный блог Солина. Различные статьи на важные темы.{% endif %}"/>
 
     <meta property="og:locale" content="ru_RU"/>
     <meta property="og:type" content="article"/>
-    <meta property="og:title" content="{{title}} — Solin's Blog"/>
-    <meta property="og:description" content="{% if page.url != '/' %}{{preview}}{% else %}Личный блог Солина. Различные статьи на разные важные темы.{% endif %}"/>
+    <meta property="og:title" content="{{title}}"/>
+    <meta property="og:description" content="{% if page.url != '/' %}{{preview}}{% else %}Личный блог Солина. Различные статьи на важные темы.{% endif %}"/>
     <meta property="og:image" content="{{"https://blog.solinofficial.com" + page.url + "images/preview.jpg"}}"/>
     <meta property="og:url" content="https://blog.solinofficial.com{% if page.url != '/' %}{{page.url}}{% endif %}"/>
     <meta property="og:site_name" content="Solin's Official Blog"/>
